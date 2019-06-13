@@ -1,31 +1,32 @@
 <?php
 
-function poligano ($lados,$medida)
+function poligono ($lados,$medida)
 {
-    $peri = $lados * $medida;
+    $area = ($medida * $medida);
+    $peri = ($medida * $lados);
 
-if ($lados==3)
+    if ($lados==3)
 
-   print "\n Triângulo área = $peri \n" ;
+        print "\n Perímetro do Triângulo: $peri \n" ;
 
-if ($lados==4)
+    if ($lados==4)
 
-   print "\n Quadrado área = $peri \n" ;
-    
-if ($lados==5)
+        print "\n Área do Quadrado: $area \n" ;
 
-   print "\n Pentágono área = $peri \n" ;
+    if ($lados==5)
+
+        print "\n Pentágono  \n" ;
 
 
-   return $tipo; 
+    return $tipop;
 
 }
 
 
-print "Digite a quantidade de lados do seu poligano (3,4 ou 5): ";
+print "Digite a quantidade de lados do seu polígono (3, 4 ou 5): ";
 $lados = (int) fgets (STDIN);
 
 print "Digite a medida do lado: ";
 $medida = (float) fgets (STDIN);
 
-$tipo = poligano ($lados, $medida);
+$tipop = poligono ($lados, $medida);
